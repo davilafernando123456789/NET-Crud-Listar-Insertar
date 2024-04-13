@@ -31,6 +31,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -74,7 +75,7 @@
         <TextBlock Grid.Row="12" Grid.Column="0" Text="Código Extension" VerticalAlignment="Center"/>
         <TextBox Grid.Row="12" Grid.Column="1" Text="{Binding Extension, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
 
-        
+
         <TextBlock Grid.Row="13" Grid.Column="0" Text="Notas" VerticalAlignment="Center"/>
         <TextBox Grid.Row="13" Grid.Column="1" Text="{Binding Notas, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
 
@@ -88,6 +89,7 @@
         <TextBox Grid.Row="16" Grid.Column="1" Text="{Binding IdEmpleado, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
 
         <!-- Botón para guardar el empleado -->
-        <Button Grid.Row="17" Grid.Column="0" Grid.ColumnSpan="2" Content="Guardar" Click="Guardar_Click" HorizontalAlignment="Center" Margin="0,5,0,5" Width="200"/>
+        <Button Grid.Row="17" Grid.Column="1" Content="Guardar" Click="Guardar_Click" HorizontalAlignment="Left" Margin="42,5,0,102" Width="403"/>
+        <Button Grid.Row="18" Grid.Column="1" Content="Listar empleados" Click="Guardar_Click_listar" HorizontalAlignment="Left" Margin="42,10,0,37" Width="403"/>
     </Grid>
 </Window>

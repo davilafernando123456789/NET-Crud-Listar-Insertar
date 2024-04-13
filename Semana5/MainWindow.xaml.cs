@@ -85,14 +85,18 @@ namespace Semana5
                     command.ExecuteNonQuery();
 
                     MessageBox.Show("Empleado insertado correctamente.");
-                    ListarEmpleados listarEmpleados = new ListarEmpleados();
-                    listarEmpleados.Show();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al insertar empleado: " + ex.Message);
             }
+        }
+
+        private void Guardar_Click_listar(object sender, RoutedEventArgs e)
+        {
+            ListarEmpleados listarEmpleados = new ListarEmpleados();
+            listarEmpleados.Show();
         }
     }
 }

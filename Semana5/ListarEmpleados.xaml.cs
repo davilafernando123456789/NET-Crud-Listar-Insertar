@@ -20,7 +20,7 @@ namespace Semana5
     /// <summary>
     /// Lógica de interacción para ListarEmpleados.xaml
     /// </summary>
-    public partial class ListarEmpleados : Page
+    public partial class ListarEmpleados 
     {
         public class Empleado
         {
@@ -69,10 +69,6 @@ namespace Semana5
             }
         }
 
-        internal void Show()
-        {
-            throw new NotImplementedException();
-        }
     }
     
 }
